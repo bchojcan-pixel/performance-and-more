@@ -196,6 +196,47 @@
     .author-info strong { display: block; font-size: .93rem; color: var(--text); }
     .author-info span   { font-size: .82rem; color: var(--muted); }
     .stars { color: #f9ab00; font-size: .95rem; margin-bottom: 2px; }
+    /* ── PARTNER BADGE ── */
+    .partner-badge-wrap {
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 28px;
+      transition: transform .2s, box-shadow .2s;
+      border-radius: 14px;
+    }
+    .partner-badge-wrap:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.15); }
+    .partner-badge {
+      width: 180px;
+      border: 1.5px solid #dadce0;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+    .partner-badge-top {
+      padding: 22px 18px 14px;
+      text-align: center;
+      background: #fff;
+    }
+    .partner-badge-text {
+      font-size: .95rem;
+      color: #444;
+      font-weight: 500;
+      margin-top: 10px;
+      letter-spacing: .01em;
+    }
+    .partner-badge-bottom {
+      background: #3c4043;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: .88rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
     .linkedin-badge {
       display: inline-flex;
       align-items: center;
@@ -326,10 +367,23 @@
   </p>
 
   <div class="card-grid" style="margin-top:24px;">
-    <div class="card" style="border-color:#1a73e8; background:#e8f0fe;">
-      <div class="icon">⭐</div>
-      <h3>Google Premier Partner 2025</h3>
-      <p>Najwyższy status w programie partnerskim Google — przyznawany wyłącznie agencjom z najwyższymi wynikami i certyfikacjami Google Ads.</p>
+    <div class="card" style="border-color:#1a73e8; background:#e8f0fe; display:flex; flex-direction:column; align-items:center;">
+      <a href="https://partnersdirectory.withgoogle.com/partners/7429600205" target="_blank" rel="noopener" class="partner-badge-wrap" title="Zweryfikowany Google Premier Partner 2026">
+        <div class="partner-badge">
+          <div class="partner-badge-top">
+            <!-- Google G logo SVG -->
+            <svg width="52" height="52" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#4285F4" d="M47.532 24.552c0-1.636-.147-3.2-.408-4.695H24.48v9.138h12.985c-.57 3.02-2.226 5.576-4.72 7.29v6.032h7.627c4.463-4.112 7.16-10.172 7.16-17.765z"/>
+              <path fill="#34A853" d="M24.48 48c6.483 0 11.926-2.146 15.9-5.823l-7.627-6.032c-2.147 1.44-4.9 2.3-8.273 2.3-6.356 0-11.738-4.292-13.664-10.064H3.016v6.228C6.974 42.933 15.118 48 24.48 48z"/>
+              <path fill="#FBBC05" d="M10.816 28.38A14.37 14.37 0 0 1 10.08 24c0-1.52.264-2.992.736-4.38v-6.228H3.016A23.997 23.997 0 0 0 .48 24c0 3.876.928 7.548 2.536 10.608l7.8-6.228z"/>
+              <path fill="#EA4335" d="M24.48 9.556c3.576 0 6.788 1.228 9.316 3.64l6.988-6.988C36.4 2.376 30.963 0 24.48 0 15.118 0 6.974 5.067 3.016 13.392l7.8 6.228c1.926-5.772 7.308-10.064 13.664-10.064z"/>
+            </svg>
+            <div class="partner-badge-text">Google Partner</div>
+          </div>
+          <div class="partner-badge-bottom">PREMIER 2026</div>
+        </div>
+      </a>
+      <p style="margin-top:14px; font-size:.9rem; text-align:center;">Najwyższy status w programie partnerskim Google — przyznawany wyłącznie agencjom z najwyższymi wynikami i certyfikacjami Google Ads.</p>
     </div>
     <div class="card">
       <div class="icon">🏆</div>
